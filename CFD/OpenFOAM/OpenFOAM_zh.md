@@ -1,19 +1,19 @@
 # OpenFOAM (CFD) on RevyOS
 
-## Prerequisites
+## 安装准备
 
-See [Build.md](https://develop.openfoam.com/Development/openfoam/blob/develop/doc/Build.md)
+查看 [Build.md](https://develop.openfoam.com/Development/openfoam/blob/develop/doc/Build.md)
 
-## Obtain the Source Code
+## 获取源代码
 
 ```
 curl -L https://dl.openfoam.com/source/v2506/OpenFOAM-v2506.tgz -o OpenFOAM-v2506.tgz
 tar -xvzf OpenFOAM-v2506.tgz
 ```
 
-## Modify the Build Configuration for RISC-V
+## 修改代码和编译配置
 
-remove flags from `./wmake/rules/linuxIcc`, `./wmake/rules/linuxGcc`
+去除 `./wmake/rules/linuxIcc`, `./wmake/rules/linuxGcc` 中针对 32 位和 i386 的的编译选项
 
 ```
 grep -r -- "-m32" wmake
@@ -22,7 +22,7 @@ grep -r "elf_i386" .
 ```
 
 
-## Compile and Install
+## 编译和安装
 
 ```
 foamSystemCheck
@@ -32,7 +32,7 @@ foam
 ./Allwmake -j -s -q -l
 ```
 
-## Verification
+## 验证
 
 ```
 debian@revyos-pioneer:~/CFD/OpenFOAM-v2506$ foamInstallationTest

@@ -1,23 +1,31 @@
 # OpenFlower (CFD) on RevyOS
 
-## Prerequisites
+## 安装准备
 
-## Obtain the Source Code
+```
+wget https://netlib.sandia.gov/linalg/laspack.tgz
+tar -xzvf laspack.tgz
+cd laspack/
+mkdir -p /home/debian/include/laspack
+make install
+```
+
+## 获取源代码
 
 ```
 curl -L "https://sourceforge.net/projects/openflower/files/OpenFlower/v1.0/openflower-v1.0.tar.gz/download" -o openflower-v1.0.tar.gz
 tar -zxvf openflower-v1.0.tar.gz
 ``` 
 
-## Modify the Build Configuration for RISC-V
+## 修改代码和编译配置
 
 ```
 CPPFLAGS="-I$HOME/include" LDFLAGS="-L$HOME/lib" ./configure
 ```
 
-## Compile and Install
+## 编译和安装
 
-can't find needed c library 
+无法找到所需 C 代码库
 
 ```
 debian@revyos-pioneer ~/C/openflower-v1.0> make
@@ -65,4 +73,4 @@ make[1]: Leaving directory '/home/debian/CFD/openflower-v1.0'
 make: *** [Makefile:308: all] Error 2
 ```
 
-## Verification
+
