@@ -66,7 +66,7 @@ The installation works fine on the Milk-V Pioneer. Both graphics and rendering w
 sudo x11vnc -many -display :0 -no6 -rfbport 5900 -auth //run/lightdm/root/:0
 ```
 
-With x11vnc hardware graphics acceleration enabled:
+Using x11vnc to mirror the physical display (with native graphics hardware):
 
 ![Works Fine On Milk-V Pioneer](images/03-works-fine-on-milkv-pionner.png)
 
