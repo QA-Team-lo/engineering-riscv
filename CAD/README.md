@@ -2,12 +2,12 @@
 
 Install and test CAD software on RISC-V RevyOS.
 
-| Name | Description | Author | License | Packaging | Documentation |
-|------|-------------|--------|---------|-----------|--------------|
-| [BRL-CAD](https://brlcad.org/) | Mature Constructive Solid Geometry (CSG) CAD system used by US military | U.S. Army Basic Research Laboratories | GPL | [Debian RFP](https://bugs.debian.org/289632) | WIP |
-| [VARKON](http://varkon.sourceforge.net/) | High-level CAD system | Orebro university Department of Technology CAD group | LGPL | [Debian](https://packages.debian.org/varkon) | WIP |
-| [QCad](https://qcad.org/en/qcad) | 2-D general CAD system using the Qt widget toolkit | | GPL | [Debian](https://packages.debian.org/qcad) | WIP |
-| [Sweet Home 3D](http://sweethome3d.sourceforge.net/) | Interior design CAD software | eTeks | GPL | - | WIP |
-| PythonCAD | 2-D general CAD system written in Python | | GPL | [Debian](https://packages.debian.org/pythoncad) | WIP |
-| [SagCAD](http://sagcad.sourceforge.jp/) | | Sagiya Metal Mold Factory, Inc. | GPL | - | WIP |
-| [Sailcut CAD](http://www.sailcut.com/Sailcut_CAD) | For designing and visualizing sails | | GPL | [Debian](https://packages.debian.org/sailcut) | WIP |
+| Name                                                     | Description                                                             | Author                                               | License | Packaging                                                                    | Documentation                            | Status |
+| -------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------- | ------- | ---------------------------------------------------------------------------- | ---------------------------------------- | ------ |
+| [BRL-CAD](https://brlcad.org/)                           | Mature Constructive Solid Geometry (CSG) CAD system used by US military | U.S. Army Basic Research Laboratories                | GPL     | [Debian, removed](https://bugs.debian.org/289632)                            | [BRL-CAD](./BRL-CAD/README.md)           | FTBFS  |
+| [VARKON](http://varkon.sourceforge.net/)                 | High-level CAD system                                                   | Orebro university Department of Technology CAD group | LGPL    | [Debian, removed](https://packages.debian.org/varkon)                        | [Varkon](./VARKON/README.md)             | FTBFS  |
+| [QCad](https://qcad.org/en/qcad)                         | 2-D general CAD system using the Qt widget toolkit                      | RibbonSoft, GmbH                                     | GPL     | [Debian, removed](https://packages.debian.org/qcad)                          | [QCad](./QCad/README.md)                 | Good   |
+| [Sweet Home 3D](http://sweethome3d.sourceforge.net/)     | Interior design CAD software                                            | eTeks                                                | GPL     | [Debian](https://packages.debian.org/sweethome3d)                            | [Sweet Home 3D](./SweetHome3D/README.md) | Good   |
+| [PythonCAD](https://sourceforge.net/projects/pythoncad/) | 2-D general CAD system written in Python                                | matteoboscolo                                        | GPL     | [Debian, removed](https://packages.debian.org/pythoncad)                     | [PythonCAD](./PythonCAD/README.md)       | FTBFS  |
+| [SagCAD](http://sagcad.sourceforge.net/)                 | An easy to use 2D CAD/CAM software                                      | Sagiya Metal Mold Factory, Inc.                      | GPL     | [Ubuntu](https://launchpad.net/ubuntu/plucky/riscv64/sagcad/0.9.14-0ubuntu6) | [SagCAD](./SagCAD/README.md)             | Good   |
+| [Sailcut CAD](http://www.sailcut.com/Sailcut_CAD)        | For designing and visualizing sails                                     | Robert Lainé and Jeremy Lainé                        | GPL     | [Debian](https://packages.debian.org/sailcut)                                | [Sailcut CAD](./Sailcut_CAD/README.md)   | Good   |
