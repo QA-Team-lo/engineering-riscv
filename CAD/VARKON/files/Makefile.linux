@@ -1,0 +1,64 @@
+##########################################################
+#
+#   Makefile for EX on GNU/Linux
+#  (c)2008-01-12 J.Kjellander
+#
+##########################################################
+
+RM = rm -f
+
+CC = gcc
+
+ distr :     CFLAGS =                    \
+            -ansi                       \
+            -pedantic                   \
+            -Wall                       \
+            -ffloat-store               \
+            -fsigned-char               \
+            -O                          \
+            -DUNIX                      \
+            -DVARKON                    \
+            -I/usr/include/tirpc
+
+ debug :     CFLAGS =                    \
+            -ansi                       \
+            -Wall                       \
+            -ffloat-store               \
+            -fsigned-char               \
+            -g3                                \
+            -DDEBUG                     \
+            -DUNIX                      \
+            -DVARKON                    \
+            -I/usr/include/tirpc
+
+ distr :     RAPCFLAGS =                 \
+            -pedantic                   \
+            -Wall                       \
+            -ffloat-store               \
+            -fsigned-char               \
+            -DUNIX                      \
+            -O                          \
+            -I/usr/include/tirpc
+
+ debug :     RAPCFLAGS =                 \
+            -pedantic                   \
+            -Wall                       \
+            -ffloat-store               \
+            -fsigned-char               \
+            -DUNIX                      \
+            -g3                         \
+            -I/usr/include/tirpc
+
+ifeq ($(DV3ODBC),TRUE) 
+COMPILE = $(CC) -c $(CFLAGS -DV3_ODBC)
+else
+COMPILE = $(CC) -c $(CFLAGS)
+endif
+
+RPCGENERATE = rpcgen
+
+LDFLAGS += -ltirpc
+
+include Makefile.EX
+
+##########################################################
