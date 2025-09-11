@@ -65,7 +65,7 @@ Processing triggers for desktop-file-utils (0.26-1) ...
 sudo x11vnc -many -display :0 -no6 -rfbport 5900 -auth //run/lightdm/root/:0
 ```
 
-启用 x11vnc 硬件图形加速后：
+使用 x11vnc 镜像物理显示屏（使用原生显卡硬件）：
 
 ![在 Milk-V Pioneer 上运行良好](images/03-works-fine-on-milkv-pionner.png)
 

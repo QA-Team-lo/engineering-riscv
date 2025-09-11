@@ -11,10 +11,10 @@
 | [enGrid](http://engrid.sourceforge.net/) | 自动 2D 或 3D 网格生成器 | | GPL | [Debian RFP](https://bugs.debian.org/636749) | [链接](./enGrid/README_zh.md) |
 | [MeshLab](http://meshlab.sourceforge.net/) | 处理和编辑非结构化 3D 三角网格的系统 | Paolo Cignoni 等 | GPL | [Debian](https://packages.debian.org/meshlab) | [链接](./MeshLab/README_zh.md) |
 | [Paraview](https://www.paraview.org/) | 并行可视化应用程序 | Kitware 等 | several | [Debian](https://packages.debian.org/paraview) | [链接](./Paraview/README_zh.md) |
-| [Caret](http://brainvis.wustl.edu/wiki/index.php/Caret:About) | 可视化工具 | Visualization group, Washington University | GPL | [Debian](https://packages.debian.org/caret) | WIP |
-| [FSLView](https://fsl.fmrib.ox.ac.uk/fsl/fslview/) | 面向医学 MRI 的体积数据可视化工具 | Analysis Group, FMRIB, Oxford, UK | GPL | [Debian](https://packages.debian.org/fslview) | WIP |
+| [Caret](http://brainvis.wustl.edu/wiki/index.php/Caret:About) | 可视化工具 | Visualization group, Washington University | GPL | [Debian](https://packages.debian.org/caret) | [链接](./Caret/README_zh.md) |
+| [FSLView](https://fsl.fmrib.ox.ac.uk/fsl/fslview/) | 面向医学 MRI 的体积数据可视化工具 | Analysis Group, FMRIB, Oxford, UK | GPL | [Debian](https://packages.debian.org/fslview) | [链接](./FSLView/README_zh.md) |
 | Illuminator | 结构化网格数据集的并行可视化库 | Adam Powell 等 | LGPL | [Debian](https://packages.debian.org/illuminator) | [链接](./Illuminator/README_zh.md) |
-| [MayaVi](http://mayavi.sourceforge.net/) 和 [Mayavi2](http://code.enthought.com/projects/mayavi/) | 基于 VTK 的数据可视化工具 | Enthought | BSD | [Debian](https://packages.debian.org/mayavi2) | WIP |
-| [VisIt](https://visit-dav.github.io/visit-website/) | 并行可视化工具 | WCI (Lawrence Livermore National Laboratories) | BSD | [Debian ITP](https://bugs.debian.org/395573) | WIP |
-| [VisTrails](https://www.vistrails.org/index.php/Main_Page) | | | GPL | - | WIP |
-| [Discretizer](http://www.discretizer.org/) | | | GPLv3 | - | WIP |
+| [MayaVi](http://mayavi.sourceforge.net/) 和 [Mayavi2](http://code.enthought.com/projects/mayavi/) | 基于 VTK 的数据可视化工具 | Enthought | BSD | [Debian](https://packages.debian.org/mayavi2) | [链接](./MayaVi/README_zh.md) |
+| [VisIt](https://visit-dav.github.io/visit-website/) | 并行可视化工具 | WCI (Lawrence Livermore National Laboratories) | BSD | [Debian ITP](https://bugs.debian.org/395573) | [链接](./VisIt/README_zh.md) |
+| [VisTrails](https://www.vistrails.org/index.php/Main_Page) | | | GPL | - | [链接](./VisTrails/README_zh.md) |
+| [Discretizer](http://www.discretizer.org/) | | | GPLv3 | - | [link](./Discretizer/README_zh.md) |
