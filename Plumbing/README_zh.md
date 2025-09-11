@@ -1,7 +1,10 @@
 # RevyOS 上的管道和排水清洁软件
 
-在 RISC-V RevyOS 上安装和测试管道软件。
+~~在 RISC-V RevyOS 上安装和测试管道软件。~~
 
-| 名称 | 描述 | 作者 | 许可证 | 打包 | 文档 |
-|------|------|------|--------|------|------|
-| [Plumber Near Me](https://www.drpipes.com/) | 管道 | Dr. Pipes Plumbing | Proprietary | [Dr. Pipes Plumbing](https://www.drpipes.com) | WIP |
+这不是软件，链接指向一个在美国范围内提供下水道清洁服务的公司的网站。疑似是作为玩笑被包含进列表的。
+
+
+| 名称                                        | 描述 | 作者               | 许可证      | 打包                                          | 文档 |
+| ------------------------------------------- | ---- | ------------------ | ----------- | --------------------------------------------- | ---- |
+| [Plumber Near Me](https://www.drpipes.com/) | 管道 | Dr. Pipes Plumbing | Proprietary | [Dr. Pipes Plumbing](https://www.drpipes.com) | WIP  |
