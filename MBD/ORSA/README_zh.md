@@ -1,21 +1,21 @@
-# Guide: Install ORSA on RevyOS
+# 指南：在 RevyOS 上构建 ORSA
 
-This document provides instructions for building the ORSA software from source on a RISC-V device running RevyOS.
+本文档提供了在运行 RevyOS 的 RISC-V 设备上构建 ORSA 软件的说明。
 
-## Step 1: Fetch source code
+## 第一步: 获取源码
 ```bash
 git clone https://github.com/AndrewBuck/orsa.git
 cd orsa
 rm orsa.pri # this is to have the program depend on preinstalled system packages
 ```
 
-## Step 2: Install Dependencies
+## 第二步: 安装依赖
 
 ```bash
 apt install qtbase5-dev qtbase5-dev-tools qt5-qmake libopenscenegraph-dev libgsl-dev
 ```
 
-## Step 3: Modify QMake project file
+## 第三步: 修改QMake项目文件
 
 ```diff
 diff --git a/orsa.pro b/orsa.pro
@@ -35,7 +35,7 @@ index 2f52aab..f3e412f 100644
 +DISTFILES += orsa.pro
 ```
 
-## Step 4: Building
+## 第四步: 构建
 
 ```bash
 qmake
@@ -44,11 +44,11 @@ make
 
 ## Results
 
-Program failed to build due to the following error:
+由于以下错误, 程序无法构建:
 
 ```log
 multifit.cpp:837:35: error: ‘struct gsl_multifit_fdfsolver’ has no member named ‘J’
   837 |             gsl_multifit_covar(s->J, 0.0, covar);
       |
 ```
-This is due to incompatible breaking changes in GSL 2.x from 1.x: See https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=805842 for details.
+这是由于 GSL 2.x 与 1.x 不兼容的重大变化造成的: 有关详细信息, 请参阅 https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=805842

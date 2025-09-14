@@ -1,10 +1,10 @@
-# Guide: Install Meep on RevyOS
+# 指南：在 RevyOS 上安装 Meep
 
-This document provides instructions for install the Meep software on a RISC-V device running RevyOS.
+本文档提供了在运行 RevyOS 的 RISC-V 设备上安装 Meep 软件的说明。
 
-## Step 1: Install
+## 第一步: 安装
 
-Luckily, Meep is already present in the RevyOS repository, along with its miscallenous library versions and Python implementations:
+幸运的是, Meep 已经存在于 RevyOS 仓库中，以及其各种库版本和 Python 实现:
 
 ```log
 libmeep-dev/trixie 1.29.0-2 riscv64
@@ -48,13 +48,13 @@ python3-meep-mpi-default/trixie 1.29.0-2 riscv64
 
 ```
 
-Install it with:
+使用以下命令安装：
 
 ```bash
 apt install meep
 ```
 
-## Results
+## 结果
 
 ```bash
 debian@revyos-pioneer:~$ meep --version
