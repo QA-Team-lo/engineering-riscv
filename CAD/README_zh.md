@@ -2,12 +2,12 @@
 
 在 RISC-V RevyOS 上安装和测试 CAD 软件。
 
-| 名称 | 描述 | 作者 | 许可证 | 打包 | 文档 |
-|------|------|------|--------|------|------|
-| [BRL-CAD](https://brlcad.org/) | 美国军方使用的成熟构造实体几何 (CSG) CAD 系统 | U.S. Army Basic Research Laboratories | GPL | [Debian RFP](https://bugs.debian.org/289632) | WIP |
-| [VARKON](http://varkon.sourceforge.net/) | 高级 CAD 系统 | Orebro university Department of Technology CAD group | LGPL | [Debian](https://packages.debian.org/varkon) | WIP |
-| [QCad](https://qcad.org/en/qcad) | 使用 Qt 小部件工具包的 2D 通用 CAD 系统 | | GPL | [Debian](https://packages.debian.org/qcad) | WIP |
-| [Sweet Home 3D](http://sweethome3d.sourceforge.net/) | 室内设计 CAD 软件 | eTeks | GPL | - | WIP |
-| PythonCAD | 用 Python 编写的 2D 通用 CAD 系统 | | GPL | [Debian](https://packages.debian.org/pythoncad) | WIP |
-| [SagCAD](http://sagcad.sourceforge.jp/) | | Sagiya Metal Mold Factory, Inc. | GPL | - | WIP |
-| [Sailcut CAD](http://www.sailcut.com/Sailcut_CAD) | 用于设计和可视化帆的软件 | | GPL | [Debian](https://packages.debian.org/sailcut) | WIP |
+| 名称                                                     | 描述                                          | 作者                                                 | 许可证 | 打包                                                                         | 文档                                        | 状态  |
+| -------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------- | ------ | ---------------------------------------------------------------------------- | ------------------------------------------- | ----- |
+| [BRL-CAD](https://brlcad.org/)                           | 美国军方使用的成熟构造实体几何 (CSG) CAD 系统 | U.S. Army Basic Research Laboratories                | GPL    | [Debian RFP，已移除](https://bugs.debian.org/289632)                         | [BRL-CAD](./BRL-CAD/README_zh.md)           | FTBFS |
+| [VARKON](http://varkon.sourceforge.net/)                 | 高级 CAD 系统                                 | Orebro university Department of Technology CAD group | LGPL   | [Debian，已移除](https://packages.debian.org/varkon)                         | [Varkon](./VARKON/README_zh.md)             | FTBFS |
+| [QCad](https://qcad.org/en/qcad)                         | 使用 Qt 小部件工具包的 2D 通用 CAD 系统       | RibbonSoft, GmbH                                     | GPL    | [Debian，已移除](https://packages.debian.org/qcad)                           | [QCad](./QCad/README_zh.md)                 | Good  |
+| [Sweet Home 3D](http://sweethome3d.sourceforge.net/)     | 室内设计 CAD 软件                             | eTeks                                                | GPL    | [Debian](https://packages.debian.org/sweethome3d)                            | [Sweet Home 3D](./SweetHome3D/README_zh.md) | Good  |
+| [PythonCAD](https://sourceforge.net/projects/pythoncad/) | 用 Python 编写的 2D 通用 CAD 系统             | matteoboscolo                                        | GPL    | [Debian，已移除](https://packages.debian.org/pythoncad)                      | [PythonCAD](./PythonCAD/README_zh.md)       | FTBFS |
+| [SagCAD](http://sagcad.sourceforge.net/)                 | 简单易用的 2D CAD/CAM 软件                    | Sagiya Metal Mold Factory, Inc.                      | GPL    | [Ubuntu](https://launchpad.net/ubuntu/plucky/riscv64/sagcad/0.9.14-0ubuntu6) | [SagCAD](./SagCAD/README_zh.md)             | Good  |
+| [Sailcut CAD](http://www.sailcut.com/Sailcut_CAD)        | 用于设计和可视化帆的软件                      | Robert Lainé and Jeremy Lainé                        | GPL    | [Debian](https://packages.debian.org/sailcut)                                | [Sailcut CAD](./Sailcut_CAD/)               | Good  |

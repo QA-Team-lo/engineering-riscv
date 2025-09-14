@@ -15,13 +15,13 @@ apt install libltdl-dev liblapack-dev libsuitesparse-dev libnetcdf-dev libnetcdf
 ```
 
 ## Step 2: Fetch source code
+
 ```bash
 git clone https://public.gitlab.polimi.it/DAER/mbdyn.git
 cd mbdyn
 git checkout develop
 ```
 
-## Step 3: Building
 ### Step 3.1: Modify source code to fix compilation errors
 Apply the following patch:
 
