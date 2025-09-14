@@ -64,3 +64,10 @@ The code is incompatible with modern C++ standards. For example:
 + Iter tmp = this->current;
 ```
 The errors are caused by outdated C++ code patterns that are not accepted by modern compilers, requiring source code patches for successful compilation.
+
+好的，这里是翻译版本：
+
+
+#### **RISC-V Adaptation Value**
+
+The last update of FELyX was in 2013 (and only involved some old PDF files, with source code development having already stopped in 2009). More than 10 years have passed, and the official mailing list has been inactive since 2014. Therefore, it may have little adaptation value.

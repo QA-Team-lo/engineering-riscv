@@ -61,3 +61,9 @@ FElt (2009) uses very old Lex/Bison and C syntax that is no longer compatible wi
 * **flex 2.6.4**
 
 As a result, the code fails to compile on current systems.
+
+
+
+#### **RISC-V Adaptation Value**
+
+The last update of FElt was in 2013, more than ten years ago, and its official download channels have seen almost no activity. The forum and mailing list have also been inactive since 2011. Therefore, it may have little adaptation value.
