@@ -56,3 +56,7 @@ Unable to find python3.11 or libpython3.11.so or libpython3.11.a or python3.11m 
 - 系统库目录只检测 `/usr/lib/x86_64-linux-gnu`, 导致 RISC-V 架构下找不到
 - Python 库相关的操作，使用 `sys.version[:3]`
   - 导致 3.11+ 实际得到的是 3.1，最终拼错版本字符串
+
+#### RISC-V 适配价值
+
+Code Aster 仍然在 gitlab 上进行更新，且官方论坛仍然活跃，具有一定的适配价值。

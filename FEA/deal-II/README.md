@@ -167,3 +167,9 @@ After 5 hours, the compilation still did not finish, and the development board r
 ```
 
 **Result**: Building from source failed.
+
+
+
+#### **RISC-V Adaptation Value**
+
+`dealii` is still under active development (the latest version 9.7.0 was released on July 23) and has a large user base (1.5k stars on GitHub), so it is worth fixing.

@@ -59,3 +59,8 @@ Known issues in the `Code_Aster` build system include:
 * System library search restricted to `/usr/lib/x86_64-linux-gnu`, which prevents finding libraries on RISC-V
 * Python library handling uses `sys.version[:3]`
   * On Python 3.11+, this returns `3.1` instead of `3.11`, leading to incorrect version strings
+
+
+#### **RISC-V Adaptation Value**
+
+It seems that Code Aster is still constantly updating on Gitlab, and the official forum of the software is still active, so it is worth fixing.
