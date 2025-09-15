@@ -1,29 +1,29 @@
-# Guide: Install MBDyn on RevyOS
+# 指南：在 RevyOS 上构建 MBDyn
 
-This document provides instructions for building the MBDyn software from source on a RISC-V device running RevyOS.
+本文档提供了在运行 RevyOS 的 RISC-V 设备上构建 MBDyn 软件的说明。
 
-## Step 1: Install Dependencies
-Required dependencies:
+## 第一步: 安装依赖
+需要的依赖:
 ```bash
 apt install make gcc g++ gfortran # deps
 apt install autoconf automake libtool autotools-dev # dev_deps
 ```
 
-Optional dependencies:
+可选的依赖:
 ```bash
 apt install libltdl-dev liblapack-dev libsuitesparse-dev libnetcdf-dev libnetcdf-dev
 ```
 
-## Step 2: Fetch source code
-
+## 第二部: 获取源代码
 ```bash
 git clone https://public.gitlab.polimi.it/DAER/mbdyn.git
 cd mbdyn
 git checkout develop
 ```
 
-### Step 3.1: Modify source code to fix compilation errors
-Apply the following patch:
+## 第三步: Building
+### 修改源代码以修复编译错误
+使用下面的 patch:
 
 ```diff
 diff --git a/libraries/libmbmath/sp_gradient_test.cc b/libraries/libmbmath/sp_gradient_test.cc
@@ -45,7 +45,7 @@ index 9bdc4298d..ee2b5a3d3 100644
  #include <chrono>
 ```
 
-### Step 3.2: Configure and build
+### 配置并构建
 
 ```bash
 sh bootstrap.sh
@@ -54,6 +54,6 @@ make
 make install
 ```
 
-## Result
+## 结果
 
 ![](result.png)

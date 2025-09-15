@@ -1,12 +1,13 @@
-# Guide: Building Tessa on RevyOS
+# 指南：在 RevyOS 上构建 Tessa
 
-This document provides instructions for building the Tessa software from source on a RISC-V device running RevyOS.
+本文档提供了在运行 RevyOS 的 RISC-V 设备上从源代码构建 Tessa 软件的说明。
 
-This package was apparently removed from Debian a long time ago (https://tracker.debian.org/pkg/tessa), with no known VCS links available to this day (besides its original paper on https://www.researchgate.net/publication/3121201_Three-dimensional_optical_pulse_simulation_using_the_FDTD_method).
+该软件包似乎很久以前就已从 Debian 中删除 (https://tracker.debian.org/pkg/tessa)，至今仍未找到任何已知的 VCS 链接（除了其原始论文 https://www.researchgate.net/publication/3121201_Three-Dimensional_optical_pulse_simulation_using_the_FDTD_method）。
 
-However, a copy of its source code is still available at: https://snapshot.debian.org/archive/debian/20050312T000000Z/pool/main/t/tessa/tessa_0.3.1.orig.tar.gz
+不过，其源代码副本仍可在以下位置获取：https://snapshot.debian.org/archive/debian/20050312T000000Z/pool/main/t/tessa/tessa_0.3.1.orig.tar.gz
 
-## Step 1: Extract source and compile
+## 第一步: 解压源码并编译
+
 ```bash
 tar xvf tessa_0.3.1.orig.tar.gz
 cd tessa-0.3.1
@@ -14,9 +15,9 @@ CFLAGS="`pkg-config --cflags hdf5`" LDFLAGS="`pkg-config --libs-only-L hdf5`" ./
 make
 ```
 
-## Results
+## 结果
 
-Building failed due to the errors below:
+由于以下错误，构建失败：
 
 ```log
 debian@revyos-pioneer:~/tessa-0.3.1$ make -j64

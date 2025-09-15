@@ -1,10 +1,10 @@
-# Guide: Install MIT Photonic Bands (MPB) on RevyOS
+# 指南：在 RevyOS 上安装 MIT Photonic Bands (MPB)
 
-This document provides instructions for install the MIT Photonic Bands (MPB) software on a RISC-V device running RevyOS.
+本文档提供了在运行 RevyOS 的 RISC-V 设备上安装 MIT Photonic Bands (MPB) 软件的说明。
 
-## Step 1: Install
+## 第一步: 安装
 
-Luckily, MPB is already present in the RevyOS repository:
+幸运的是, MPB 已经存在于 RevyOS 仓库中:
 
 ```log
 mpb/trixie 1.11.1-6+b2 riscv64
@@ -29,13 +29,13 @@ mpb-scm/trixie 1.11.1-6 all
   MIT Photonic-Bands initialisation files
 ```
 
-Install it with:
+使用以下命令安装：
 
 ```bash
 apt install mpb
 ```
 
-## Results
+## 结果
 
 ```bash
 debian@revyos-pioneer:~$ mpb -V
